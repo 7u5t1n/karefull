@@ -1,0 +1,30 @@
+{
+  "id": "836330a4-75fb-4689-89d4-40988b2bdf57",
+  "presentationDefinition": {
+    "input_descriptors": [
+      {
+        "id": "VerifiablePrescription",
+        "format": {
+          "jwt_vc_json": {
+            "alg": [
+              "EdDSA"
+            ]
+          }
+        },
+        "constraints": {
+          "fields": [
+            {
+              "path": [
+                "$.type"
+              ],
+              "filter": {
+                "type": "string",
+                "pattern": "VerifiablePrescription"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

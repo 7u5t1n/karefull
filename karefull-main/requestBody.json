@@ -1,0 +1,51 @@
+{
+  "issuanceKey": {
+    "type": "local",
+    "jwk": "{\"kty\":\"OKP\",\"d\":\"cX1-JhiEG40ZauMUkB-rfYxRyt9k10M44DWXwTeOnlg\",\"crv\":\"Ed25519\",\"kid\":\"WGGR-NRHYFe6Mhvpfwq9hwgTgsl6qNzYeC88-GvAu8g\",\"x\":\"zXNWEWPIWSozt2CJaeU70HQbZcBbd8tOhmRP8NnU4oc\"}"
+  },
+  "issuerDid": "did:key:z6MktHFdLyKUQADeqiMVxy83xxoKYDr6Y3jGeFZdxCbms26r",
+  "vc": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "VerifiablePrescription"
+    ],
+    "credentialSubject": {
+      "id": "did:ebsi:3BZDqHZWKTm2JHPFgGcgh5fgh77ghgftN15TxJCKH7bZGu69",
+      "address": [
+        "567 Park Avenue, New York, NY 10022, USA"
+      ],
+      "dateOfBirth": "1976-01-24",
+      "clinicianName": "SMITH",
+      "clinicianNumber": "John",
+      "drugName": "MALE",
+      "dosageForm": "John SMITH",
+      "DateOfIssue": "0904008992H",
+      "PatientsName": "NEW YORK, USA",
+      "QuantityPrescribed": "NEW YORK, USA",
+      "DirectionsForUse": "NEW YORK, USA"
+    },
+    "id": "urn:uuid:3add94f4-28ec-42a1-8704-4e4aa51006b4",
+    "issued": "2021-08-31T00:00:00Z",
+    "issuer": {
+      "id": ""
+    },
+    "validFrom": "2021-08-31T00:00:00Z",
+    "validTo": "",
+    "issuanceDate": "2021-08-31T00:00:00Z"
+  },
+  "mapping": {
+    "id": "<uuid>",
+    "issuer": {
+      "id": "<issuerDid>"
+    },
+    "credentialSubject": {
+      "id": "<subjectDid>"
+    },
+    "issued": "<timestamp>",
+    "validFrom": "<timestamp>",
+    "expirationDate": "<timestamp-in:14d>"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "b46e40de-d793-4e9c-965f-eb905dc1041c",
+  "presentationDefinition": {
+    "input_descriptors": [
+      {
+        "id": "VerifiablePrescription",
+        "format": {
+          "jwt_vc_json": {
+            "alg": [
+              "EdDSA"
+            ]
+          }
+        },
+        "constraints": {
+          "fields": [
+            {
+              "path": [
+                "$.type"
+              ],
+              "filter": {
+                "type": "string",
+                "pattern": "VerifiablePrescription"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "tokenResponse": {
+    "vp_token": "eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QiLCJraWQiOiJkaWQ6d2ViOmVudHJhLndhbHQuaWQ6aG9sZGVyIzQ4ZDhhMzQyNjNjZjQ5MmFhN2ZmNjFiNjE4M2U4YmNmIn0.eyJzdWIiOiJkaWQ6d2ViOmVudHJhLndhbHQuaWQ6aG9sZGVyIiwibmJmIjoxNzA4NTQ4ODg0LCJpYXQiOjE3MDg1NDg5NDQsImp0aSI6IjEiLCJpc3MiOiJkaWQ6d2ViOmVudHJhLndhbHQuaWQ6aG9sZGVyIiwibm9uY2UiOiIiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLnBvcnRhbC53YWx0LmlkL29wZW5pZDR2Yy92ZXJpZnkiLCJ2cCI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVQcmVzZW50YXRpb24iXSwiaWQiOiIxIiwiaG9sZGVyIjoiZGlkOndlYjplbnRyYS53YWx0LmlkOmhvbGRlciIsInZlcmlmaWFibGVDcmVkZW50aWFsIjpbImV5SmhiR2NpT2lKRlpFUlRRU0lzSW5SNWNDSTZJa3BYVkNJc0ltdHBaQ0k2SW1ScFpEcHJaWGs2ZWpaTmEzUklSbVJNZVV0VlVVRkVaWEZwVFZaNGVUZ3plSGh2UzFsRWNqWlpNMnBIWlVaYVpIaERZbTF6TWpaeUluMC5leUpwYzNNaU9pSmthV1E2YTJWNU9ubzJUV3QwU0Vaa1RIbExWVkZCUkdWeGFVMVdlSGs0TTNoNGIwdFpSSEkyV1ROcVIyVkdXbVI0UTJKdGN6STJjaUlzSW5OMVlpSTZJbVJwWkRwM1pXSTZaVzUwY21FdWQyRnNkQzVwWkRwb2IyeGtaWElqTkRoa09HRXpOREkyTTJObU5Ea3lZV0UzWm1ZMk1XSTJNVGd6WlRoaVkyWWlMQ0oyWXlJNmV5SkFZMjl1ZEdWNGRDSTZXeUpvZEhSd2N6b3ZMM2QzZHk1M015NXZjbWN2TWpBeE9DOWpjbVZrWlc1MGFXRnNjeTkyTVNKZExDSjBlWEJsSWpwYklsWmxjbWxtYVdGaWJHVkRjbVZrWlc1MGFXRnNJaXdpVm1WeWFXWnBZV0pzWlZCeVpYTmpjbWx3ZEdsdmJpSmRMQ0pqY21Wa1pXNTBhV0ZzVTNWaWFtVmpkQ0k2ZXlKcFpDSTZJbVJwWkRwM1pXSTZaVzUwY21FdWQyRnNkQzVwWkRwb2IyeGtaWElqTkRoa09HRXpOREkyTTJObU5Ea3lZV0UzWm1ZMk1XSTJNVGd6WlRoaVkyWWlMQ0poWkdSeVpYTnpJanBiSWxSbGMzUWlYU3dpWkdGMFpVOW1RbWx5ZEdnaU9pSXdNeTB3TVMwNU9TSXNJbU5zYVc1cFkybGhiazVoYldVaU9pSkVjaTRnVkdWemRDSXNJbU5zYVc1cFkybGhiazUxYldKbGNpSTZJakl3TXpReUlpd2laSEoxWjA1aGJXVWlPaUpVWlhOMElFUnlkU0lzSW1SdmMyRm5aVVp2Y20waU9pSXlJaXdpVUdGMGFXVnVkSE5PWVcxbElqb2lWR0Z0YVc1dklpd2lVWFZoYm5ScGRIbFFjbVZ6WTNKcFltVmtJam9pTWlJc0lrUnBjbVZqZEdsdmJuTkdiM0pWYzJVaU9pSlhhR0YwWlhabGNpSjlMQ0pwWkNJNkluVnlianAxZFdsa09qVXhaVEV5WW1KbUxUTmpaakl0TkRGbE55MWhNVGN5TFdRek56UTNZamt4WkdNeE5DSXNJbWx6YzNWbFpDSTZJakl3TWpRdE1ESXRNakZVTWpBNk16WTZOVE11TkRFMU1qVTNNalEyV2lJc0ltbHpjM1ZsY2lJNmV5SnBaQ0k2SW1ScFpEcHJaWGs2ZWpaTmEzUklSbVJNZVV0VlVVRkVaWEZwVFZaNGVUZ3plSGh2UzFsRWNqWlpNMnBIWlVaYVpIaERZbTF6TWpaeUluMHNJblpoYkdsa1JuSnZiU0k2SWpJd01qUXRNREl0TWpGVU1qQTZNelk2TlRNdU5ERTFNekUwTkRRMFdpSXNJblpoYkdsa1ZHOGlPaUlpTENKcGMzTjFZVzVqWlVSaGRHVWlPaUl5TURJeExUQTRMVE14VkRBd09qQXdPakF3V2lJc0ltVjRjR2x5WVhScGIyNUVZWFJsSWpvaU1qQXlOQzB3TXkwd05sUXlNRG96TmpvMU15NDBNVFV6TkRJMk9UVmFJbjBzSW1wMGFTSTZJblZ5YmpwMWRXbGtPalV4WlRFeVltSm1MVE5qWmpJdE5ERmxOeTFoTVRjeUxXUXpOelEzWWpreFpHTXhOQ0lzSW1WNGNDSTZNVGN3T1RjMU56UXhNeXdpYVdGMElqb3hOak13TXpZNE1EQXdMQ0p1WW1ZaU9qRTJNekF6Tmpnd01EQjkuN2NpZnAzWDVWMTh6WVJ3cmFOVXczejd1Q2c4cHp3Z1hSeDR5SG01U0JSV2dhTDhtbC01ZTJPRjBIZUR5RGVrYUFQZEd5VlZJWTRyRWVoY1RfRGJJQlEiXX19.u0r8Ku5jdhxvZTiedy30G5tnyPpYnRekWNcDcdJp2QpYyg-oiqcLKFtoWH-xTIcJZfmw37HPh96FI7MJPCXXvg",
+    "presentation_submission": {
+      "id": "1",
+      "definition_id": "1",
+      "descriptor_map": [
+        {
+          "id": "VerifiablePrescription",
+          "format": "jwt_vp",
+          "path": "$",
+          "path_nested": {
+            "id": "VerifiablePrescription",
+            "format": "jwt_vc_json",
+            "path": "$.verifiableCredential[0]"
+          }
+        }
+      ]
+    },
+    "state": "b46e40de-d793-4e9c-965f-eb905dc1041c"
+  },
+  "verificationResult": true,
+  "policyResults": {
+    "results": [
+      {
+        "credential": "VerifiablePresentation",
+        "policies": [
+          {
+            "policy": "signature",
+            "description": "Checks a JWT credential by verifying its cryptographic signature using the key referenced by the DID in `iss`.",
+            "is_success": true,
+            "result": {
+              "sub": "did:web:entra.walt.id:holder",
+              "nbf": 1708548884,
+              "iat": 1708548944,
+              "jti": "1",
+              "iss": "did:web:entra.walt.id:holder",
+              "nonce": "",
+              "aud": "https://verifier.portal.walt.id/openid4vc/verify",
+              "vp": {
+                "@context": [
+                  "https://www.w3.org/2018/credentials/v1"
+                ],
+                "type": [
+                  "VerifiablePresentation"
+                ],
+                "id": "1",
+                "holder": "did:web:entra.walt.id:holder",
+                "verifiableCredential": [
+                  "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCIsImtpZCI6ImRpZDprZXk6ejZNa3RIRmRMeUtVUUFEZXFpTVZ4eTgzeHhvS1lEcjZZM2pHZUZaZHhDYm1zMjZyIn0.eyJpc3MiOiJkaWQ6a2V5Ono2TWt0SEZkTHlLVVFBRGVxaU1WeHk4M3h4b0tZRHI2WTNqR2VGWmR4Q2JtczI2ciIsInN1YiI6ImRpZDp3ZWI6ZW50cmEud2FsdC5pZDpob2xkZXIjNDhkOGEzNDI2M2NmNDkyYWE3ZmY2MWI2MTgzZThiY2YiLCJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiVmVyaWZpYWJsZVByZXNjcmlwdGlvbiJdLCJjcmVkZW50aWFsU3ViamVjdCI6eyJpZCI6ImRpZDp3ZWI6ZW50cmEud2FsdC5pZDpob2xkZXIjNDhkOGEzNDI2M2NmNDkyYWE3ZmY2MWI2MTgzZThiY2YiLCJhZGRyZXNzIjpbIlRlc3QiXSwiZGF0ZU9mQmlydGgiOiIwMy0wMS05OSIsImNsaW5pY2lhbk5hbWUiOiJEci4gVGVzdCIsImNsaW5pY2lhbk51bWJlciI6IjIwMzQyIiwiZHJ1Z05hbWUiOiJUZXN0IERydSIsImRvc2FnZUZvcm0iOiIyIiwiUGF0aWVudHNOYW1lIjoiVGFtaW5vIiwiUXVhbnRpdHlQcmVzY3JpYmVkIjoiMiIsIkRpcmVjdGlvbnNGb3JVc2UiOiJXaGF0ZXZlciJ9LCJpZCI6InVybjp1dWlkOjUxZTEyYmJmLTNjZjItNDFlNy1hMTcyLWQzNzQ3YjkxZGMxNCIsImlzc3VlZCI6IjIwMjQtMDItMjFUMjA6MzY6NTMuNDE1MjU3MjQ2WiIsImlzc3VlciI6eyJpZCI6ImRpZDprZXk6ejZNa3RIRmRMeUtVUUFEZXFpTVZ4eTgzeHhvS1lEcjZZM2pHZUZaZHhDYm1zMjZyIn0sInZhbGlkRnJvbSI6IjIwMjQtMDItMjFUMjA6MzY6NTMuNDE1MzE0NDQ0WiIsInZhbGlkVG8iOiIiLCJpc3N1YW5jZURhdGUiOiIyMDIxLTA4LTMxVDAwOjAwOjAwWiIsImV4cGlyYXRpb25EYXRlIjoiMjAyNC0wMy0wNlQyMDozNjo1My40MTUzNDI2OTVaIn0sImp0aSI6InVybjp1dWlkOjUxZTEyYmJmLTNjZjItNDFlNy1hMTcyLWQzNzQ3YjkxZGMxNCIsImV4cCI6MTcwOTc1NzQxMywiaWF0IjoxNjMwMzY4MDAwLCJuYmYiOjE2MzAzNjgwMDB9.7cifp3X5V18zYRwraNUw3z7uCg8pzwgXRx4yHm5SBRWgaL8ml-5e2OF0HeDyDekaAPdGyVVIY4rEehcT_DbIBQ"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "credential": "VerifiablePrescription",
+        "policies": [
+          {
+            "policy": "signature",
+            "description": "Checks a JWT credential by verifying its cryptographic signature using the key referenced by the DID in `iss`.",
+            "is_success": true,
+            "result": {
+              "iss": "did:key:z6MktHFdLyKUQADeqiMVxy83xxoKYDr6Y3jGeFZdxCbms26r",
+              "sub": "did:web:entra.walt.id:holder#48d8a34263cf492aa7ff61b6183e8bcf",
+              "vc": {
+                "@context": [
+                  "https://www.w3.org/2018/credentials/v1"
+                ],
+                "type": [
+                  "VerifiableCredential",
+                  "VerifiablePrescription"
+                ],
+                "credentialSubject": {
+                  "id": "did:web:entra.walt.id:holder#48d8a34263cf492aa7ff61b6183e8bcf",
+                  "address": [
+                    "Test"
+                  ],
+                  "dateOfBirth": "03-01-99",
+                  "clinicianName": "Dr. Test",
+                  "clinicianNumber": "20342",
+                  "drugName": "Test Dru",
+                  "dosageForm": "2",
+                  "PatientsName": "Tamino",
+                  "QuantityPrescribed": "2",
+                  "DirectionsForUse": "Whatever"
+                },
+                "id": "urn:uuid:51e12bbf-3cf2-41e7-a172-d3747b91dc14",
+                "issued": "2024-02-21T20:36:53.415257246Z",
+                "issuer": {
+                  "id": "did:key:z6MktHFdLyKUQADeqiMVxy83xxoKYDr6Y3jGeFZdxCbms26r"
+                },
+                "validFro m": "2024-02-21T20:36:53.415314444Z",
+                "validTo": "",
+                "issuanceDate": "2021-08-31T00:00:00Z",
+                "expirationDate": "2024-03-06T20:36:53.415342695Z"
+              },
+              "jti": "urn:uuid:51e12bbf-3cf2-41e7-a172-d3747b91dc14",
+              "exp": 1709757413,
+              "iat": 1630368000,
+              "nbf": 1630368000
+            }
+          }
+        ]
+      }
+    ],
+    "success": true,
+    "time": "0.0445s",
+    "policies_run": 2,
+    "policies_failed": 0,
+    "policies_succeeded": 2
+  }
+}
