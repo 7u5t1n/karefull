@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { getStateFromURL } from '@/lib/getStateValue';
+import { getStateFromURL } from './getStateValue';
 
 export async function verifyRequest() {
   const data = {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import QRCode from 'qrcode.react';
-import { verifyRequest } from '@/lib/verifyRequest';
-import { getSession, waitForSuccess } from '@/lib/checkVerificationResult';
+import { verifyRequest } from '../../lib/verifyRequest';
+import { getSession, waitForSuccess } from '../../lib/checkVerificationResult';
 import { useRouter } from 'next/navigation';
 
 export default function Verify() {

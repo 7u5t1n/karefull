@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { issueRequest } from '@/lib/issueRequest';
+import { issueRequest } from '../lib/issueRequest';
 import { useRouter } from 'next/navigation';
 
 export default function Form() {
