@@ -13,12 +13,13 @@ type FormState = {
 };
 export function issueRequest(formState: FormState) {
   const data = {
-    issuanceKey: {
-      type: 'local',
+    issuerKey: {
+      type: 'jwk',
       jwk: '{"kty":"OKP","d":"cX1-JhiEG40ZauMUkB-rfYxRyt9k10M44DWXwTeOnlg","crv":"Ed25519","kid":"WGGR-NRHYFe6Mhvpfwq9hwgTgsl6qNzYeC88-GvAu8g","x":"zXNWEWPIWSozt2CJaeU70HQbZcBbd8tOhmRP8NnU4oc"}',
     },
     issuerDid: 'did:key:z6MktHFdLyKUQADeqiMVxy83xxoKYDr6Y3jGeFZdxCbms26r',
-    vc: {
+    credentialConfigurationId: 'VerifiablePrescription_jwt_vc_json',
+    credentialData: {
       '@context': ['https://www.w3.org/2018/credentials/v1'],
       type: ['VerifiableCredential', 'VerifiablePrescription'],
       credentialSubject: {
@@ -70,3 +71,4 @@ export function issueRequest(formState: FormState) {
       return { error: true, data: error };
     });
 }
+
